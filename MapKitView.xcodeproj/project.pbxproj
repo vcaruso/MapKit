@@ -12,6 +12,7 @@
 		3C61695E28E4A8700071BF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C61695D28E4A8700071BF1A /* Assets.xcassets */; };
 		3C61696228E4A8700071BF1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C61696128E4A8700071BF1A /* Preview Assets.xcassets */; };
 		3C61696928E4A8A20071BF1A /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61696828E4A8A20071BF1A /* ApplicationData.swift */; };
+		3C61696B28E4AD510071BF1A /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61696A28E4AD510071BF1A /* PlaceAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3C61695F28E4A8700071BF1A /* MapKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapKit.entitlements; sourceTree = "<group>"; };
 		3C61696128E4A8700071BF1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C61696828E4A8A20071BF1A /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
+		3C61696A28E4AD510071BF1A /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3C61695F28E4A8700071BF1A /* MapKit.entitlements */,
 				3C61696028E4A8700071BF1A /* Preview Content */,
 				3C61696828E4A8A20071BF1A /* ApplicationData.swift */,
+				3C61696A28E4AD510071BF1A /* PlaceAnnotation.swift */,
 			);
 			path = MapKit;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C61696B28E4AD510071BF1A /* PlaceAnnotation.swift in Sources */,
 				3C61696928E4A8A20071BF1A /* ApplicationData.swift in Sources */,
 				3C61695C28E4A86F0071BF1A /* ContentView.swift in Sources */,
 				3C61695A28E4A86F0071BF1A /* MapKitApp.swift in Sources */,
