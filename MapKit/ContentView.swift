@@ -6,21 +6,28 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
+    
+    @EnvironmentObject var appData: ApplicationData
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Map(coordinateRegion: $appData.region, interactionModes: [.zoom, .pan])
+            
+            HStack {
+                Text(String(appData.region.center.latitude))
+                Text(String(appData.region.center.longitude))
+            }.padding(10)
+                .font(.caption)
         }
-        .padding()
+        .ignoresSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ApplicationData())
     }
 }

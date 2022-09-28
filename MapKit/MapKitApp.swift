@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MapKitApp: App {
+    
+    var appData = ApplicationData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(appData)
         }
     }
 }
